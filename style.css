@@ -13,9 +13,23 @@ p{
 .banner{
   background-image: url(./assets/bg3.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
   margin-right: 0px;
   display: flex;
   padding-left: 0px;
+
+}
+/* 📱 Mobile Responsive Banner */
+@media (max-width: 576px) {
+.banner {
+  background-image: url(./assets/bg3.jpg);
+  background-size:inherit;       /* stretch to cover container */
+  background-repeat: no-repeat; /* ✅ stop repeating */
+  background-position: center;  /* keep image centered */
+  margin-right: 0px;
+  display: flex;
+  padding-left: 0px;
+}
 
 }
 
@@ -84,6 +98,18 @@ nav{
   transition: 100ms;
 }
 
+/* 📱 Mobile Responsive Buttons */
+@media (max-width: 576px) {
+  .button {        /* full width for mobile */
+    width: 150px; /* flexible height */
+    padding: 12px 15px; /* bigger tap area */
+    font-size: 16px;    /* improve readability */
+    margin: 10px auto;  /* center buttons vertically */
+    display: flex;      /* keep text centered */
+    justify-content: center;
+    align-items: center;
+  }
+}
 
  h4 {
   color: black;
@@ -176,6 +202,20 @@ nav{
 .skill-card .glass svg {
   font-size: 2.5em;
   fill: #fff;
+}
+/* 📱 Mobile Optimization */
+@media (max-width: 576px) {
+  .skill-card .glass {
+    width: 120px;              /* full width inside container */
+    max-width: 300px;         /* prevent being too wide */
+    height: 150px;             /* let height adjust naturally */
+    margin: 10px auto;        /* center cards vertically */
+  /* reset rotation for readability */
+  }
+
+  .skill-card .glass svg {
+    font-size: 2em;           /* shrink icons */
+  }
 }
 
 .project-card {
@@ -287,6 +327,38 @@ nav{
     filter: blur(0);
   }
 }
+/* 📱 Mobile Responsive Project Cards */
+@media (max-width: 576px) {
+  .project-card {
+    width: 100%;          /* full width on small screens */
+    height: auto;         /* let content decide height */
+    margin-bottom: 20px;  /* add spacing between stacked cards */
+  }
+
+  .project__card {
+    padding: 20px;        /* reduce padding for mobile */
+    font-size: 0.9rem;    /* scale down text slightly */
+  }
+
+  .project__card__title {
+    font-size: 1.2rem;    /* smaller heading */
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .project__card__content {
+    font-size: 0.85rem;   /* reduce paragraph size */
+    margin-top: 0;
+  }
+
+  .project__card__image-container {
+    margin: -1rem -1rem 0.5rem -1rem; /* tighter spacing */
+  }
+
+  .project__card__svg {
+    top: 80px; /* reposition SVG so it doesn’t overlap oddly */
+  }
+}
 
 #project-space{
   background-color: #d0d1d0;
@@ -315,6 +387,15 @@ nav{
   box-shadow: 0px 0px 3px 1px #00000088;
   cursor: pointer;
   padding: 14px;
+}
+/* 📱 Mobile Responsive Box */
+@media (max-width: 576px) {
+  .box {
+    height: auto;         /* allow content to define height */
+    padding: 18px;        /* slightly larger padding for readability */
+    margin-bottom: 15px;  /* spacing between stacked boxes */
+    font-size: 0.95rem;   /* scale down text slightly if inside */
+  }
 }
 
 .div-container{
