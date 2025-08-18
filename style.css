@@ -1,0 +1,509 @@
+
+.banner{
+  background-image: url(./assets/bg3.jpg);
+  background-size: cover;
+  margin-right: 0px;
+  display: flex;
+  padding-left: 0px;
+
+}
+
+nav{
+  height: 60px;
+}
+
+
+#logo{
+  width:200px;
+  padding-top: 20px;
+}
+
+.banner-div{
+  width: 70%;
+}
+.banner-element{
+  width: 100%;
+}
+.banner-button{
+  display: flex;
+  justify-content: center;
+}
+
+
+.button {
+  height: 40px;
+  margin: 5px;
+  width: 150px;
+  padding: 10px;
+  background: #333;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: Consolas, Courier New, monospace;
+  border: solid #404c5d 1px;
+  font-size: 14px;
+  color: white;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  border-radius: 5px;
+  background: linear-gradient(145deg, #2e2d2d, #212121);
+  -webkit-box-shadow: -1px -5px 15px #41465b, 5px 5px 15px #41465b,
+    inset 5px 5px 10px #212121, inset -5px -5px 10px #212121;
+  box-shadow: -1px -5px 15px #41465b, 5px 5px 15px #41465b,
+    inset 5px 5px 10px #212121, inset -5px -5px 10px #212121;
+}
+
+.button:hover {
+  -webkit-box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
+  box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
+  color: #d6d6d6;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.button:active {
+  -webkit-box-shadow: 1px 1px 13px #20232e, -1px -1px 33px #545b78;
+  box-shadow: 1px 1px 13px #20232e, -1px -1px 33px #545b78;
+  color: #d6d6d6;
+  -webkit-transition: 100ms;
+  transition: 100ms;
+}
+
+
+ h4 {
+  color: black;
+  text-align: center;
+  display: block;
+}
+
+ .info {
+  font-weight: 400;
+  color: black;
+  display: block;
+  text-align: center;
+  font-size: 15px;
+  margin: 1em;
+  padding: 1em;
+}
+
+
+ .img {
+  width: 4.8em;
+  height: 4.8em;
+  background: white;
+  border-radius: 15px;
+  margin: 10px;
+}
+
+.profile{
+  background-size: cover;
+  height: 400px;
+  weight: 350px;
+
+}
+.profile-div{
+  padding: 25px;
+}
+
+.skill-section{
+    background-color:#000 ;
+
+}
+.project-section{
+    background-image:url(./assets/) ;
+    background-size: cover;
+    padding-top: 10px;
+
+}
+
+.skill-card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.skill-card .glass {
+  position: relative;
+  width: 180px;
+  height: 200px;
+  background: linear-gradient(#fff2, transparent);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  border-radius: 10px;
+  margin: 0 -45px;
+  backdrop-filter: blur(10px);
+  transform: rotate(calc(var(--r) * 1deg));
+}
+
+.skill-card:hover .glass {
+  transform: rotate(0deg);
+  margin: 0 10px;
+}
+
+.skill-card .glass::before {
+  content: attr(data-text);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.skill-card .glass svg {
+  font-size: 2.5em;
+  fill: #fff;
+}
+
+.project-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 320px;
+  width: 85%;
+  border-radius: 10px;
+}
+
+.project__card {
+  position: relative;
+  background: #252525;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 60px;
+  color: #aaa;
+  box-shadow: 0 .25rem .25rem rgba(0,0,0,0.2),
+    0 0 1rem rgba(0,0,0,0.2);
+  overflow: hidden;
+}
+.project__card a{
+ color: #fff;
+ text-decoration: none;
+}
+.project__card__image-container {
+  margin: -2rem -2rem 1rem -2rem;
+}
+
+.project__card__line {
+  opacity: 0;
+  animation: LineFadeIn .8s .8s forwards ease-in;
+}
+
+.project__card__image {
+  opacity: 0;
+  animation: ImageFadeIn .8s 1.4s forwards;
+}
+
+.project__card__title {
+  color: white;
+  margin-top: 35px;
+  margin-bottom: 15px;
+}
+
+.project__card__content {
+  margin-top: -1rem;
+   margin-bottom: 10px;
+  opacity: 0;
+  animation: ContentFadeIn .8s 1.6s forwards;
+}
+
+.project__card__svg {
+  position: absolute;
+  left: 0;
+  top: 115px;
+}
+
+@keyframes LineFadeIn {
+  0% {
+    opacity: 0;
+    d: path("M 0 300 Q 0 300 0 300 Q 0 300 0 300 C 0 300 0 300 0 300 Q 0 300 0 300 ");
+    stroke: #fff;
+  }
+
+  50% {
+    opacity: 1;
+    d: path("M 0 300 Q 50 300 100 300 Q 250 300 350 300 C 350 300 500 300 650 300 Q 750 300 800 300");
+    stroke: #888BFF;
+  }
+
+  100% {
+    opacity: 1;
+    d: path("M -2 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 802 400");
+    stroke: #545581;
+  }
+}
+
+@keyframes ContentFadeIn {
+  0% {
+    transform: translateY(-1rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes ImageFadeIn {
+  0% {
+    transform: translate(-.5rem, -.5rem) scale(1.05);
+    opacity: 0;
+    filter: blur(2px);
+  }
+
+  50% {
+    opacity: 1;
+    filter: blur(2px);
+  }
+
+  100% {
+    transform: translateY(0) scale(1.0);
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+#project-space{
+  background-color: #d0d1d0;
+}
+
+.gold {
+  background: linear-gradient(90deg, #FFD700, #FFB700, #FFD700);
+  background-size: 200% auto;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: shine 2s linear infinite;
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+.box{
+  width: 100%;
+  height: 254px;
+  background: #171717;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0px 0px 3px 1px #00000088;
+  cursor: pointer;
+  padding: 14px;
+}
+
+.div-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* From Uiverse.io by omriluz */ 
+.form-container {
+  width:450px;
+  background: linear-gradient(#212121, #212121) padding-box;
+  border: 2px solid transparent;
+  padding: 32px 24px;
+  font-size: 14px;
+  font-family: inherit;
+  gap: 20px;
+  box-sizing: border-box;
+  border-radius: 16px;
+  background-size: 200% 100%;
+}
+.form-container .form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.form-container .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: px;
+}
+
+.form-container .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #717171;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.form-container .form-group input {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  color: #fff;
+  font-family: inherit;
+  background-color: transparent;
+  border: 1px solid #414141;
+}
+
+.form-container .form-group textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  resize: none;
+  color: #fff;
+  height: 96px;
+  border: 1px solid #414141;
+  background-color: transparent;
+  font-family: inherit;
+}
+
+.form-container .form-group input::placeholder {
+  opacity: 0.5;
+}
+
+
+.form-container .form-submit-btn:hover {
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.form-btn-div{
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+    background-color: #000; /* Black theme */
+    color: #fff;
+    padding: 40px 20px 20px;
+    font-family: Arial, sans-serif;
+  }
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: auto;
+  }
+
+  .footer-about h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+
+  .footer-links a,
+  .footer-socials a {
+    display: block;
+    margin: 5px 0;
+    color: #bbb;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .footer-links a:hover,
+  .footer-socials a:hover {
+    color: #fff; /* Highlight on hover */
+  }
+
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #333;
+    padding-top: 15px;
+    font-size: 14px;
+    color: #777;
+  }
+
+/* From Uiverse.io by elisapi */ 
+.sccard {
+  width: fit-content;
+  height: fit-content;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  gap: 20px;
+}
+
+/* for all social containers*/
+.socialContainer {
+  width: 52px;
+  height: 52px;
+  background-color: #171717;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: 0.3s;
+  border-radius: 30px;
+}
+/* instagram*/
+.containerOne:hover {
+  background-color: #d62976;
+  transition-duration: 0.3s;
+  transform: scale(1.2);
+}
+/* twitter*/
+.containerTwo:hover {
+  background-color: #00acee;
+  transition-duration: 0.3s;
+  transform: scale(1.2);
+}
+/* linkdin*/
+.containerThree:hover {
+  background-color: #0072b1;
+  transition-duration: 0.3s;
+  transform: scale(1.2);
+}
+/* Whatsapp*/
+.containerFour:hover {
+  background-color: #128c7e;
+  transition-duration: 0.3s;
+  transform: scale(1.2);
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: 0.3s;
+}
+
+.socialSvg {
+  width: 17px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
