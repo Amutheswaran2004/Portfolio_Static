@@ -12,34 +12,31 @@
     
 </head>
 <body>
-    <div class="container">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary p-0 ">
+<div class="container nav-div">
+<nav class="navbar navbar-expand-lg p-0">
+  <div class="container-fluid nav-select">
+    <!-- Logo -->
     <a class="navbar-brand p-0" href="#">
-  <img src="./assets/logo.png" id="logo" class="img-fluid" alt="Logo"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <img src="./assets/logo.png" id="logo" class="img-fluid" alt="Logo">
+    </a>
+
+    <!-- Toggler button for mobile -->
+    <button class="navbar-toggler tog" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav ms-auto gap-4 text-uppercase ">
 
-        <li class="nav-item">
-          <a class="nav-link" href="#About">About Me</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#Skill">Skills</a>
-        </li> 
-        <li class="nav-item">
-          <a class="nav-link" href="#project">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#Edu">Education</a>
-        </li> 
-        <li class="nav-item">
-          <a class="nav-link" href="#Contact">Contact</a>
-        </li> 
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ms-auto text-uppercase gap-3">
+        <li class="nav-item"><a class="nav-link" href="#About">About Me</a></li>
+        <li class="nav-item"><a class="nav-link" href="#Skill">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#project">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#Edu">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="#Contact">Contact</a></li>
       </ul>
     </div>
-  
+  </div>
 </nav>
 </div>
 <section>
@@ -74,17 +71,17 @@
           <div class="col-md-12  mb-0 mt-0 info  py-2">
                <p >Currently pursuing Bachelor of Engineering with a solid academic background and hands-on internship experience in Java Programming. Proficient in OOPS concept, Strong problem-solving skills and a proactive learner, eager to contribute effectively as part of a dynamic team in esteemed organization.</p>
           </div>
-          <div class="col-md-12 ">
-                <button class= "button">
-                  Resume</button>
-          </div>          
+                    
        </div>
        </div>
       </div>
       <div class="col-md-6  mt-4 profile-div">
         <img src="./assets/profile.png" class="img-fluid profile" alt="Profile Picture">
-
+        <button class= "button"> Resume</button>
+          </div>
        </div>
+       <div class="col-md-12 ">
+                
       </div>
     </div>
   </div>
@@ -121,9 +118,9 @@
 
 <section id="project">
 
- <div class="container" >
+ <div class="container " >
   <div class="row">
-     <div class="col-md-12 mt-2 my-4">
+     <div class="col-md-12 mt-2 my-4" id="project-div">
      <h4 style="color:black; letter-spacing: 3px;">Projects</h4>
      <p class="text-center">Here is some of my recent works</p>
      </div>
