@@ -1,4 +1,15 @@
+h3,h4,h5{
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
 
+p{
+    font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
 .banner{
   background-image: url(./assets/bg3.jpg);
   background-size: cover;
@@ -282,7 +293,7 @@ nav{
 }
 
 .gold {
-  background: linear-gradient(90deg, #FFD700, #FFB700, #FFD700);
+  background: white;
   background-size: 200% auto;
   color: transparent;
   -webkit-background-clip: text;
