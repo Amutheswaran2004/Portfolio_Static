@@ -29,7 +29,7 @@ p{
   margin-right: 0px;
   display: flex;
   padding-left: 0px;
-  width: 100vh;
+  width: 100%;
 }
 
 }
@@ -301,14 +301,23 @@ gap: 2px;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap: 35px;
   }
   .skill-card .glass {
     width: 120px;              /* full width inside container */
     max-width: 300px;         /* prevent being too wide */
     height: 120px;             /* let height adjust naturally */
-    margin: 10px auto;        /* center cards vertically */
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;  
+       /* center cards vertically */
   /* reset rotation for readability */
   }
+  .skill-card .glass svg {
+  height: auto;
+  margin-bottom: 25px;
+  fill: #fff;
+}
 
 }
 
