@@ -101,7 +101,7 @@ p{
   margin: 5px;
   width: 150px;
   padding: 10px;
-  background: #333;
+  background: #000;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -110,7 +110,7 @@ p{
   -ms-flex-align: center;
   align-items: center;
   font-family: Consolas, Courier New, monospace;
-  border: solid #404c5d 1px;
+  border: solid #0000 1px;
   font-size: 14px;
   color: white;
   -webkit-transition: 500ms;
@@ -181,7 +181,8 @@ p{
     max-width: 300px;            /* limit profile image size */
     width: 80%;
     height: auto;
-    border-radius: 50%;          /* circular profile */
+    border-radius: 50%;  
+    background-color: white;        /* circular profile */
     box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
   }
   
@@ -237,12 +238,19 @@ p{
     width: 100%;
 
 }
-.project-section{
-    background-image:url(./assets/) ;
-    background-size: cover;
+.space{
+    background-color: #F2F2F2;
     padding-top: 10px;
 
 }
+#pro-1{
+ display: flex;
+}
+
+#pro-1 .project__card{
+ 
+}
+
 @media  (max-width : 576px){
   #project-div{
     margin-bottom: 10px;
